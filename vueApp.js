@@ -9,7 +9,8 @@ var app = new Vue({
     methods:{
         // updatePost est utilisé pour mettre à jour
         updatePost(){
-            axios.get('https://swapi.dev/api/films/').then(result => this.posts = result.data).catch(erreur => this.posts = [{title: "Erreur de chargement"}]);
+
+            films.axios.get('https://swapi.dev/api/films/').then(result => this.posts = result.data).catch(erreur => this.posts = [{title: "Erreur de chargement"}]);
         },
         
     }
