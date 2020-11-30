@@ -12,15 +12,17 @@
 </head>
 
 <body>
-    <div id="app">
-        <button v-on:click="updatePost()">Mettre à jour</button>
+<div id="myapp">
+    <button v-on:click="getAllStarWarsFilms"> 
+        Get All Star Wars Films</button>
         <ul>
-            <li v-for="post in posts">{{ post }}</li>
+            <li v-for=" item in starwarsallfilms.results">
+                {{ item.title }}
+            </li>
         </ul>
-    </div>
+</div>
     
-    <label for="titleFilm">Titre du film</label>
-    <input type="text" id="films" value="">
-    <script src="vueApp.js"></script>
+ 
+    <script src="myVueApp.js"></script>
 </body>
 </html>
