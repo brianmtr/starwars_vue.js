@@ -14,26 +14,36 @@
 <body>
 <div id="myapp">
     <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">Bienvenue sur mon premier exercice vue.js</p>
+        <h1 class="display-4">STAR WARS Revenge of the sith</h1>
+        <p class="lead"></p>
         <hr class="my-4">
         <p>Cliquez sur le boutton ci-dessous pour afficher tous les films Star Wars.</p>
         <a class="btn btn-primary btn-lg" href="#" role="button"><button v-on:click="getAllStarWarsFilms"> 
-            Liste des films</button></a>
+            Description film</button></a>
             
         <ul>
             <li v-for=" item in starwarsallfilms.results">
 
-                <!-- <a :href="item.url">--><div class="getAllStarWarsFilmsInfo">
+                <!-- <a :href="item.url">--><div class="getAllStarWarsFilms2">
                     <strong>Titre du film:</strong> {{ item.title }}<br>
-                    <br>  
-                    <strong>Date de sortie:</strong> {{ item.release_date }}<!--</a>--><button class="description" ><a href="aNewHope.html">Description</a></button>
+                    <br>
+                    <strong>Date de sortie:</strong> {{ item.release_date }}<!--</a>--></button><br>
+                    <br>
+                    <strong>Directeur:</strong> {{ item.director }}<br>
+                    <br>
+                    <strong>Producteur:</strong> {{ item.producer }}<br>
+                    <br>
+                    <strong>Résumé:</strong> {{ item.opening_crawl }}<br>
+                    <br>
+                    <strong>Personnages:</strong> {{ item.name }}<br>
+                    <br>
+                    <strong>Vaisseaux:</strong> {{ item.starships.name }}<br>
                     <br>
                     <div class="bar"></div>
                     <br>
             </li>
             </ul>
- 
+ </div>
   </div>
       </div>
  
