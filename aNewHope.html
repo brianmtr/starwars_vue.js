@@ -24,10 +24,11 @@
         <ul>
             <li v-for=" item in starwarsallfilms.results">
 
-                <!-- <a :href="item.url">--><div class="getAllStarWarsFilms1">
+                <div class="getAllStarWarsFilms1"><!-- getAllStarWarsFilms1 est le nom de ma fonction donnée
+                     dans myVueApp.js dans lequel il y a bien le lien du premier films mais il m'affiche quand même les autres-->
                     <strong>Titre du film:</strong> {{ item.title }}<br>
                     <br>
-                    <strong>Date de sortie:</strong> {{ item.release_date }}<!--</a>--></button><br>
+                    <strong>Date de sortie:</strong> {{ item.release_date }}</button><br>
                     <br>
                     <strong>Directeur:</strong> {{ item.director }}<br>
                     <br>
@@ -38,7 +39,7 @@
                     <strong>Personnages:</strong> {{ item.name }}<br>
                     <br>
                     <strong>Vaisseaux:</strong> {{ item.starships.name }}<br>
-                    <br>
+                    <br></a>
                     <div class="bar"></div>
                     <br>
             </li>
